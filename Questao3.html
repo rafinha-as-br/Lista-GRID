@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<style>
+    body,html{
+        height: 80%;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 25px;
+    }
+    .main{
+        display:grid;
+        height: 100%;
+        grid-template-areas: 
+                "header header header"
+                "E1 C D1"
+                "E2 C D2"
+                "E2 footer footer";
+        gap: 5px;
+    }
+
+    #header{
+        grid-area: header;
+        background-color: #fdd683;   
+    }
+    #E1{
+        grid-area: E1;
+        background-color: #f48f8f;
+    }
+    
+    #E2{
+        grid-area: E2;
+        background-color: #f48f8f;
+    }
+    #D1{
+        grid-area: D1;
+        background-color: #f48f8f;
+    }
+    #D2{
+        grid-area: D2;
+        background-color: #f48f8f;
+    }
+    #C{
+        grid-area: C;
+        background-color:#fdd683;
+    }
+    #footer{
+        grid-area: footer;
+        background-color: #fdd683;
+    }
+
+    .box{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        border-radius: 15px;
+    }
+    
+</style>
+<body>
+    <div class="main">
+        <div class="box" id="header">1</div>
+        <div class="box" id="E1">2</div>
+        <div class="box" id="C">3</div>
+        <div class="box" id="D1">4</div>
+        <div class="box" id="E2">5</div>
+        <div class="box" id="D2">6</div>
+        <div class="box" id="footer">7</div>
+    </div>
+</body> 
+</html>
